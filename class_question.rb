@@ -1,4 +1,4 @@
-class Questions
+class Question
   attr_accessor :question, :answer
 
   def initialize
@@ -14,7 +14,3 @@ class Questions
   end
 
 end
-
-new_question = Questions.new
-
-p new_question.ask_question

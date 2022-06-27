@@ -10,3 +10,5 @@ class Player
     @life -= 1
   end
 end
+
+player1 = Player.new('Alex')
