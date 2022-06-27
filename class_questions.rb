@@ -1,14 +1,20 @@
-require './question_bank'
-
 class Questions
-  attr_accessor :question, 
+  attr_accessor :question, :answer
 
   def initialize
-    @question = @Qbank.find(|question| question[:id] === rand(20))
+    @question = nil
+    @answer = nil
   end
 
   def ask_question
-    self.question= @Qbank(rand(20))
-    puts self.question
+    random1 = rand(20)
+    random2 = rand(20)
+    self.answer= random1 + random2
+    self.question= "What does #{random1} plus #{random2} equal?"
   end
+
 end
+
+new_question = Questions.new
+
+p new_question.ask_question
