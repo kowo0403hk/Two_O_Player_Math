@@ -11,4 +11,3 @@ class Player
   end
 end
 
-player1 = Player.new('Alex')

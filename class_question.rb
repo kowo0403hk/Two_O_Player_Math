@@ -1,4 +1,5 @@
 class Question
+  # attr_accessor gives us the built-in setter and getter methods
   attr_accessor :question, :answer
 
   def initialize
